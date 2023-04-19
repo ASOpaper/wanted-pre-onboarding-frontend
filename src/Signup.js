@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import customApi from "./customApi";
 
 function Signup() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate()
 
     function isOkayEmail(){
         const regex = /@/;
@@ -22,6 +24,7 @@ function Signup() {
                     password
                 }
             })
+            navigate('/signin');
         }catch(err){
             console.log(err);
         }
@@ -30,7 +33,7 @@ function Signup() {
     return (
         <main>
             <h1>회원가입</h1>
-            <div>
+            <div className="sign">
                 <input
                 data-testid="email-input"
                 value={email}

@@ -25,7 +25,6 @@ function Signin() {
                 }
             })
 			localStorage.setItem('access_token', res.data.access_token);
-            alert('로그인 성공!');
             navigate('/');
         }catch(err){
             console.log(err);
@@ -35,7 +34,7 @@ function Signin() {
     return (
         <main>
             <h1>로그인</h1>
-            <div>
+            <div className="sign">
                 <input
                 data-testid="email-input"
                 value={email}

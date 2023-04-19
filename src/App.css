@@ -39,3 +39,7 @@ a{
 .home{
   margin-top: 3rem;
 }
+.sign > *{
+  margin: 0.5rem auto;
+  display: block;
+}
