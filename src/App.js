@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' Component={Home} />
+        <Route path='/wanted-pre-onboarding-frontend/' Component={Home} />
         <Route path='/*' Component={Error} />
 
         <Route element={<IsLoginRoutes />}>
@@ -24,7 +24,7 @@ function App() {
           <Route path='/todo' Component={Todo} />
         </Route>
       </Routes>
-      <nav className='home'><Link to='/'>홈으로 가기</Link></nav>
+      <nav className='home'><Link to='/wanted-pre-onboarding-frontend/'>홈으로 가기</Link></nav>
     </div>
   );
 }

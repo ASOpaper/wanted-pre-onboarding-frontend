@@ -42,6 +42,7 @@ function Signup() {
                 <input
                 data-testid="password-input"
                 value={password}
+                type={password}
                 onChange={(e) => setPassword(e.target.value)}
                 />
                 {isOkayEmail() && isOkayPassword() ?
