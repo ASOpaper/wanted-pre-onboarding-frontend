@@ -25,7 +25,7 @@ function Signin() {
                 }
             })
 			localStorage.setItem('access_token', res.data.access_token);
-            navigate('/');
+            navigate('/todo');
         }catch(err){
             console.log(err);
         }
